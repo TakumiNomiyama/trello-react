@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6e6cb 0%, #d4a373 100%);
+  font-family: "Playfair Display", serif;
+}
+
+.todoContainer {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  padding: 40px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.inputText {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid #d4a373;
+  background-color: transparent;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.inputText:focus {
+  outline: none;
+  border-bottom: 2px solid #a5683a;
+}
+
+.submitButton {
+  padding: 12px 25px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #d4a373;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #a5683a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 163, 115, 0.4);
+}
+
+.todoList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.todoList li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  background-color: #faf3e8;
+  border-radius: 8px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.todoList li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.todoList li input[type="checkbox"] {
+  margin-right: 15px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d4a373;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.todoList li input[type="checkbox"]:checked {
+  background-color: #d4a373;
+  border-color: #d4a373;
+}
+
+.todoList li span {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 18px;
+  color: #5e503f;
+}
+
+.todoList li button {
+  background-color: transparent;
+  border: none;
+  color: #d4a373;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.todoList li button:hover {
+  color: #a5683a;
+}
