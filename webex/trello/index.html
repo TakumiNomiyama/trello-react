@@ -1,12 +1,25 @@
-<div class="main-container">
-  <div class="list-container">
-    <div class="list-header">To do リスト</div>
-    <div class="cards-container" id="cards-container"></div>
-    <div class="list-footer">
-      <div class="input-container">
-        <input type="text" class="input-todo" id="input-todo" />
-        <div class="input-button" id="add-button">追加</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Devbox Template</title>
+    <div class="main-container">
+      <div class="list-container">
+        <div class="list-header">To do リスト</div>
+        <div class="cards-container" id="cards-container"></div>
+        <div class="list-footer">
+          <div class="input-container">
+            <input type="text" class="input-todo" id="input-todo" />
+            <div class="input-button" id="add-button">追加</div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -17,19 +17,4 @@ addButton.onclick = function () {
   container.append(card);
 
   inputElement.value = "";
-
-  const deleteButton = document.createElement("div");
-  deleteButton.className = "delete";
-
-  deleteButton.onclick = function();
-  {
-    card.remove();
-  }
-
-  card.append("deleteButton");
-  container.append(card);
-
-  inputElement.value = " ";
-
-  return card;
 };
